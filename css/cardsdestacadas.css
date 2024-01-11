@@ -1,0 +1,81 @@
+@import url(styles.css);
+
+.bocy-container{
+    display: flex;
+    justify-content: center;
+    height: vh;
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    margin: 0;
+}
+
+.card{
+    height: 500px;
+    margin: 50px;
+    box-shadow: 5px 5px 20px black;
+    overflow: hidden;
+}
+
+.img-card {
+    height: 100%;
+    width: 100%;
+    border-radius: 3px;
+    transition: .5s;
+    object-fit: cover;
+}
+
+.card:hover{
+    cursor: pointer;
+}
+
+.card:hover img{
+    transform: scale(1.1) rotate(-3deg);
+}
+
+@media screen and (max-width: 1024px) {
+    .card {
+        flex-basis: calc(33.333% - 40px);
+        max-width: calc(33.333% - 40px);
+        height: 300px;
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .card {
+        flex-basis: 100%;
+        max-width: 200px;
+        margin: 20px;
+    }
+
+    .img-card {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    /* Ajusta el ancho máximo del contenedor en la media query de 768px */
+    .container {
+        max-width: 80%; /* Puedes ajustar este valor según tus necesidades */
+        margin: 0 auto; /* Centra el contenedor horizontalmente */
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%; /* Ancho completo en pantallas pequeñas */
+    }
+}
+
+

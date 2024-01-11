@@ -1,0 +1,90 @@
+@import url(styles.css);
+
+.productos-divisor{
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 50px;
+} 
+
+.productos-divisor span{
+    display: inline-block;
+    position: relative;
+    font-family: Gideon Roman;
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.productos-divisor span::after,.productos-divisor span::before{
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 3px;
+    background-color: black;
+    top: 0.6em;
+}
+
+.productos-divisor span::before{
+    left: -140px;
+}
+
+.productos-divisor span::after{
+    right: -140px;
+}
+
+@media screen and (max-width: 1440px) {
+    .productos-divisor span {
+        font-size: 32px; /* Ajusta el tamaño del texto para pantallas más pequeñas */
+    }
+
+    .productos-divisor span::before,
+    .productos-divisor span::after {
+        width: 80px; /* Ajusta el ancho de las líneas para pantallas más pequeñas */
+    }
+
+    .productos-divisor span::before {
+        left: -100px; /* Ajusta la posición izquierda para pantallas más pequeñas */
+    }
+
+    .productos-divisor span::after {
+        right: -100px; /* Ajusta la posición derecha para pantallas más pequeñas */
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .productos-divisor span {
+        font-size: 24px; /* Ajusta el tamaño del texto para pantallas más pequeñas */
+    }
+
+    .productos-divisor span::before,
+    .productos-divisor span::after {
+        width: 60px; /* Ajusta el ancho de las líneas para pantallas más pequeñas */
+    }
+
+    .productos-divisor span::before {
+        left: -80px; /* Ajusta la posición izquierda para pantallas más pequeñas */
+    }
+
+    .productos-divisor span::after {
+        right: -80px; /* Ajusta la posición derecha para pantallas más pequeñas */
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .productos-divisor span {
+        font-size: 20px; /* Ajusta el tamaño del texto para pantallas más pequeñas */
+    }
+
+    .productos-divisor span::before,
+    .productos-divisor span::after {
+        width: 50px; /* Ajusta el ancho de las líneas para pantallas más pequeñas */
+    }
+
+    .productos-divisor span::before {
+        left: -70px; /* Ajusta la posición izquierda para pantallas más pequeñas */
+    }
+
+    .productos-divisor span::after {
+        right: -70px; /* Ajusta la posición derecha para pantallas más pequeñas */
+    }
+}

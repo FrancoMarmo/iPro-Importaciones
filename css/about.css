@@ -1,0 +1,36 @@
+
+
+.about-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-about{
+    transition: all ease 0.5s;
+}
+
+.img-about:hover{
+    transform: scale(1.020);
+    transition: all ease 0.4s;
+}
+.texto-about{
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 2;
+    padding: 30px;
+}
+
+.texto-about h1{
+    font-size: 45px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.texto-about h1:hover{
+    transition: all ease .5s;
+    color: orangered;
+}
+
+

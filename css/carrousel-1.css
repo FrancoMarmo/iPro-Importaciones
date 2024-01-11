@@ -1,0 +1,14 @@
+@import url(styles.css);
+
+
+.carrousel_container{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+.carousel{
+    width: 1220px;
+}
+
+
+

@@ -1,0 +1,93 @@
+@import url(styles.css);
+
+.destacados_container{
+    text-align: center;
+    margin-top: 60px;
+
+} 
+
+.destacados_container span{
+    display: inline-block;
+    position: relative;
+    font-family: Gideon Roman;
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+.destacados_container span::after,.destacados_container span::before{
+    content: '';
+    position: absolute;
+    width: 120px;
+    height: 3px;
+    background-color: black;
+    top: 0.6em;
+}
+
+.destacados_container span::before{
+    left: -140px;
+}
+
+.destacados_container span::after{
+    right: -140px;
+}
+
+
+@media screen and (max-width: 1440px) {
+    .destacados_container span {
+        font-size: 32px;
+    }
+
+    .destacados_container span::before,
+    .destacados_container span::after {
+        width: 80px;
+    }
+
+    .destacados_container span::before {
+        left: -100px;
+    }
+
+    .destacados_container span::after {
+        right: -100px;
+    }
+}
+
+/* Media query para pantallas de 425px a 375px */
+@media screen and (max-width: 425px) {
+    .destacados_container span {
+        font-size: 24px;
+    }
+
+    .destacados_container span::before,
+    .destacados_container span::after {
+        width: 60px;
+    }
+
+    .destacados_container span::before {
+        left: -80px;
+    }
+
+    .destacados_container span::after {
+        right: -80px;
+    }
+}
+
+/* Media query para pantallas de 375px hacia abajo */
+@media screen and (max-width: 375px) {
+    .destacados_container span {
+        font-size: 20px;
+    }
+
+    .destacados_container span::before,
+    .destacados_container span::after {
+        width: 50px;
+    }
+
+    .destacados_container span::before {
+        left: -70px;
+    }
+
+    .destacados_container span::after {
+        right: -70px;
+    }
+}
