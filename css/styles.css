@@ -63,4 +63,10 @@ a {
     border-radius: 5px;
 }
 
+/*media querys*/
 
+@media (max-width: 425px){
+    .button{
+        display: none;
+    }
+}
