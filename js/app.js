@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 $(document).ready(function() {
-  $('#autoWidth').lightSlider({
+  $ ('#autoWidth').lightSlider({
       autoWidth:true,
       loop:true,
       onSliderLoad: function() {
