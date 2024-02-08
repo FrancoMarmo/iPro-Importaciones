@@ -21,7 +21,7 @@
 
 .img-card {
     height: 100%;
-    width: 100%;
+    width: 350px;
     border-radius: 3px;
     transition: .5s;
     object-fit: cover;

@@ -63,6 +63,15 @@ a {
     border-radius: 5px;
 }
 
+.navbar__mobile-menu {
+    display: none;
+  }
+  
+  .show-menu {
+    display: flex !important;
+  }
+  
+
 /*media querys*/
 
 @media (max-width: 425px){

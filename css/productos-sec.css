@@ -92,7 +92,7 @@
     }
 
     .p-container .p-item {
-        margin: 10px;
+        margin: 30px;
     }
 
     .p-container .p-title {
@@ -107,7 +107,7 @@
     }
 
     .p-container .p-item {
-        margin: 10px;
+        margin: 30px;
     }
 
     .p-container .p-title {
@@ -115,14 +115,14 @@
     }
 }
 
-@media (max-width: 608px) {
+@media (max-width: 425px) {
     .p-container {
         grid-template-columns: repeat(1, 300px);
 
     }
 
     .p-container .p-item {
-        margin: 10px;
+        margin: 30px;
     }
 
     .p-container .p-title {

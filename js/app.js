@@ -45,18 +45,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const toggleButton = document.querySelector(".navbar__toggle-btn");
   const mobileMenu = document.querySelector(".navbar__mobile-menu");
 
-  // Si el menú móvil está oculto ('none' o vacío), lo muestra cambiando a 'flex'.
-  // Si el menú móvil ya está visible ('flex'), lo oculta cambiando a 'none'.
+  // Función para alternar la visibilidad del menú móvil
   const toggleMenu = () => {
-    mobileMenu.style.display =
-      mobileMenu.style.display === "none" || mobileMenu.style.display === ""
-        ? "flex"
-        : "none";
+    mobileMenu.classList.toggle("show-menu");
   };
 
   // Ocultar la lista desplegable
   const hideMenuOnResize = () => {
-    mobileMenu.style.display = "none";
+    mobileMenu.classList.remove("show-menu");
   };
 
   // Event listeners
@@ -68,18 +64,22 @@ document.addEventListener("DOMContentLoaded", () => {
   const mobileLinks = document.querySelectorAll(".nav__link-mobile");
   mobileLinks.forEach((link) => {
     link.addEventListener("click", () => {
-      mobileMenu.style.display = "none";
+      mobileMenu.classList.remove("show-menu");
     });
   });
 });
 
+
+
 // jQuery para el slider
 $(document).ready(function() {
-  $('#autoWidth').lightSlider({
-    autoWidth: true,
-    loop: true,
-    onSliderLoad: function() {
-      $('#autoWidth').removeClass('cS-hidden');
-    }
+  $('#autoWidth').slick({
+     slidesToShow: 3,
+     slidesToScroll: 1,
+     autoplay: true,
+     autoplaySpeed: 2000, // Ajusta la velocidad de reproducción automática
+     prevArrow: '<button type="button" class="slick-prev">&#10094;</button>',
+     nextArrow: '<button type="button" class="slick-next">&#10095;</button>',
   });
 });
+
