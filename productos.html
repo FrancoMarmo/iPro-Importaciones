@@ -14,7 +14,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- JS-->
     <script src="js/app.js"></script>
-
+    <script src="https://kit.fontawesome.com/77479f913b.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/filtros.js"></script>
     <!-- mi css -->
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/carrousel-1.css">
@@ -28,7 +30,6 @@
     <link rel="stylesheet" href="./css/contacto.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.css" integrity="sha512-+1GzNJIJQ0SwHimHEEDQ0jbyQuglxEdmQmKsu8KI7QkMPAnyDrL9TAnVyLPEttcTxlnLVzaQgxv2FpLCLtli0A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <script src="https://kit.fontawesome.com/77479f913b.js" crossorigin="anonymous"></script>
     
 </head>
 
@@ -92,38 +93,56 @@
         <span>PRODUCTOS</span>
     </section>
 
-    <section class="class">
-        <div class="p-container">
-            <div class="p-item">
-                <img src="./assets/img/parlante cards 1.png" alt="" class="p-img">
-                <h1 class="p-title">PARLANTES</h1>
-                <a href="./paginas/productos.html" class="p-btn">COMPRAR</a>
+    <section class="productos-container">
+        <div class="wrap">
+            <h1>SELECCIONA UN PRODUCTO</h1>
+            <div class="store-wrapper">
+                <div class="category_list">
+                    <a href="#" class="category_item" category="all">Todo</a>
+                    <a href="#" class="category_item" category="ordenadores">Ordenadores</a>
+                    <a href="#" class="category_item" category="laptops">Laptops</a>
+                    <a href="#" class="category_item" category="smartphones">Smartphones</a>
+                    <a href="#" class="category_item" category="monitores">TV</a>
+                    <a href="#" class="category_item" category="audifonos">Apple Watch</a>
+                </div>
+                <section class="products-list">
+                    <div class="product-item" category="laptops">
+                        <img src="./assets/img/jbl1.jpg" alt="" >
+                        <a href="#">Laptop Hp</a>
+                    </div>
+                    <div class="product-item" category="laptops">
+                        <img src="./assets/img/jbl1.jpg" alt="" >
+                        <a href="#">Laptop Toshiba</a>
+                    </div>
+                    <div class="product-item" category="smartphones">
+                        <img src="./assets/img/jbl1.jpg" alt="" >
+                        <a href="#">Samsung Galaxy</a>
+                    </div>
+                    <div class="product-item" category="smartphones">
+                        <img src="./assets/img/jbl1.jpg" alt="" >
+                        <a href="#">Iphone 7</a>
+                    </div>
+                    <div class="product-item" category="ordenadores">
+                        <img src="./assets/img/jbl1.jpg" alt="" >
+                        <a href="#">PC Hp</a>
+                    </div>
+                    <div class="product-item" category="ordenadores">
+                        <img src="./assets/img/jbl1.jpg" alt="" >
+                        <a href="#">PC Lenovo</a>
+                    </div>
+                    <div class="product-item" category="monitores">
+                        <img src="./assets/img/jbl1.jpg" alt="" >
+                        <a href="#">Monitor Asus</a>
+                    </div>
+                    <div class="product-item" category="audifonos">
+                        <img src="./assets/img/jbl1.jpg" alt="" >
+                        <a href="#">Audifonos JBL</a>
+                    </div>
+                </section>
             </div>
-            <div class="p-item">
-                <img src="./assets/img/parlante cards 2.png" alt="" class="p-img">
-                <h1 class="p-title">PARLANTES</h1>
-                <a href="./paginas/productos.html" class="p-btn">COMPRAR</a>
-            </div>
-            <div class="p-item">
-                <img src="./assets/img/parlante cards 3.png" alt="" class="p-img">
-                <h1 class="p-title">PARLANTES</h1>
-                <a href="./paginas/productos.html" class="p-btn">COMPRAR</a>
-            </div>
-            <div class="p-item">
-                <img src="./assets/img/parlante cards 1.png" alt="" class="p-img">
-                <h1 class="p-title">PARLANTES</h1>
-                <a href="./paginas/productos.html" class="p-btn">COMPRAR</a>
-            </div>
-            <div class="p-item">
-                <img src="./assets/img/parlante cards 2.png" alt="" class="p-img">
-                <h1 class="p-title">PARLANTES</h1>
-                <a href="./paginas/productos.html" class="p-btn">COMPRAR</a>
-            </div>
-            <div class="p-item">
-                <img src="./assets/img/parlante cards 3.png" alt="" class="p-img">
-                <h1 class="p-title">PARLANTES</h1>
-                <a href="./paginas/productos.html" class="p-btn">COMPRAR</a>
-            </div>         
+        </div>
+            </section>
+
         </div>
     </section>
 
